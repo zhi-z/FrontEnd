@@ -2,7 +2,9 @@
 
 ## 1 简介
 
-　　路由，其实就是指向的意思，当我点击页面上的home按钮时，页面中就要显示home的内容，如果点击页面上的about 按钮，页面中就要显示about 的内容。Home按钮  => home 内容， about按钮 => about 内容，也可以说是一种映射. 所以在页面上有两个部分，一个是点击部分，一个是点击之后，显示内容的部分。 
+　　路由，其实就是指向的意思，当我点击页面上的home按钮时，页面中就要显示home的内容，如果点击页面上的about 按钮，页面中就要显示about 的内容。
+
+Home按钮  => home 内容， about按钮 => about 内容，也可以说是一种映射. 所以在页面上有两个部分，一个是点击部分，一个是点击之后，显示内容的部分。 
 
 　　点击之后，怎么做到正确的对应，比如，我点击home 按钮，页面中怎么就正好能显示home的内容。这就要在js 文件中配置路由。
 
@@ -24,7 +26,7 @@
 
 1. 页面实现（html模版中）
 
-　　　　在vue-router中, 我们看到它定义了两个标签<router-link> 和<router-view>来对应点击和显示部分。<router-link> 就是定义页面中点击的部分，<router-view> 定义显示部分，就是点击后，区配的内容显示在什么地方。所以 <router-link> 还有一个非常重要的属性 to，定义点击之后，要到哪里去， 如：<router-link  to="/home">Home</router-link>
+　　　　在vue-router中, 我们看到它定义了两个标签`<router-link> `和`<router-view>`来对应点击和显示部分。`<router-link> `就是定义页面中点击的部分，`<router-view> `定义显示部分，就是点击后，区配的内容显示在什么地方。所以 `<router-link> `还有一个非常重要的属性 to，定义点击之后，要到哪里去， 如：`<router-link  to="/home">`Home`</router-link>`
 
 2. js 中配置路由
 
@@ -97,7 +99,7 @@ const app = new Vue({
 </script>
 ```
 
-2) 在 App.vue中 定义<router-link > 和 </router-view>  
+2) 在 App.vue中 定义`<router-link >` 和 `</router-view>  `
 
 ```
 <template>

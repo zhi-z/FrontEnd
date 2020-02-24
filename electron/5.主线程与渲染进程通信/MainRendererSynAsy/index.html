@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>    
+        .content{
+
+            width: 100%;
+
+            height: 400px;
+
+            background: orange;
+
+
+            overflow-y: auto;
+        }
+    </style>
+  
+</head>
+<body>
+       
+    <button id="btn">
+        打开新窗口
+    </button>
+
+  
+
+    <p> 我是一个测试内容</p>
+    
+
+    <button id="send">
+
+        渲染进程执行主进程里面的方法 （异步）
+    </button>
+
+    <br>
+    <br>
+
+    <button id="sendreplay">
+
+        渲染进程执行主进程里面的方法，主进程给渲染进程反馈处理结果 （异步）
+    </button>
+
+    <br>
+
+    <br>
+
+    
+    <button id="sendsync">
+
+       渲染进程和主进程通信 （同步）
+    </button>
+    
+    
+
+    <script src="renderer/open.js"></script>   
+
+    <script src="renderer/menu.js"></script>   
+
+    <script src="renderer/ipcRenderer.js"></script>   
+
+</body>
+</html>
